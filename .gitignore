@@ -1,0 +1,9 @@
+# Local preview config (not part of the site)
+.claude/
+
+# Old photos with backgrounds (replaced by the *-cutout.webp files)
+assets/img/hero-portrait.jpg
+assets/img/about-portrait.jpg
+assets/img/education-library.jpg
+assets/img/experience-clapper.jpg
+assets/img/contact-sunflowers.jpg

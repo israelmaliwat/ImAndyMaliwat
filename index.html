@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Israel Andy T. Maliwat | Frontend Developer</title>
+  <meta name="description" content="Portfolio of Israel Andy T. Maliwat, Frontend Developer and BSIT student at National Teachers College in Manila.">
+  <meta name="theme-color" content="#5C0A1A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <nav class="nav__inner container" aria-label="Main">
+      <a class="nav__logo" href="#hero" aria-label="Israel Andy T. Maliwat, back to top">
+        <svg class="nav__logo-mark" viewBox="0 0 64 64" aria-hidden="true"><polygon points="32,6 38,26 58,32 38,38 32,58 26,38 6,32 26,26" fill="#E8B04B" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/></svg>
+        <span>Israel Andy</span>
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Open menu</span>
+        <span class="nav__burger" aria-hidden="true"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education &amp; Achievements</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO / TITLE CARD ============ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__speed"></div>
+        <div class="hero__halftone"></div>
+
+        <!-- Static toon illustration (shown on small / low-end devices, and until the 3D scene loads) -->
+        <div class="hero__fallback">
+          <svg class="toon toon--panel-a" viewBox="0 0 220 300">
+            <defs><pattern id="fb-dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="1.8" fill="#F4A6B8"/></pattern></defs>
+            <rect x="6" y="6" width="208" height="288" rx="6" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="8"/>
+            <rect x="20" y="20" width="180" height="120" fill="#800020" stroke="#1A0A0E" stroke-width="5"/>
+            <polygon points="110,40 118,72 150,80 118,88 110,120 102,88 70,80 102,72" fill="#E8B04B" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/>
+            <rect x="20" y="152" width="84" height="128" fill="url(#fb-dots)" stroke="#1A0A0E" stroke-width="5"/>
+            <rect x="116" y="152" width="84" height="128" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="5"/>
+            <path d="M158 216 L124 160 M158 216 L196 166 M158 216 L198 236 M158 216 L170 276 M158 216 L122 268" stroke="#1A0A0E" stroke-width="2"/>
+          </svg>
+          <svg class="toon toon--panel-b" viewBox="0 0 200 260">
+            <rect x="6" y="6" width="188" height="248" rx="6" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="8"/>
+            <rect x="18" y="18" width="164" height="100" fill="url(#fb-dots)" stroke="#1A0A0E" stroke-width="5"/>
+            <rect x="18" y="130" width="164" height="112" fill="#A4243B" stroke="#1A0A0E" stroke-width="5"/>
+            <polygon points="100,150 106,180 136,186 106,192 100,222 94,192 64,186 94,180" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/>
+          </svg>
+          <svg class="toon toon--laptop" viewBox="0 0 260 190">
+            <g stroke="#1A0A0E" stroke-width="7" stroke-linejoin="round">
+              <rect x="40" y="10" width="180" height="122" rx="10" fill="#5C0A1A"/>
+              <rect x="54" y="24" width="152" height="94" rx="4" fill="#1A0A0E"/>
+              <path d="M10 160 L40 132 H220 L250 160 Z" fill="#800020"/>
+              <rect x="10" y="160" width="240" height="18" rx="6" fill="#A4243B"/>
+            </g>
+            <circle cx="66" cy="34" r="4" fill="#F4A6B8"/><circle cx="78" cy="34" r="4" fill="#E8B04B"/><circle cx="90" cy="34" r="4" fill="#FFF4E6"/>
+            <g stroke-linecap="round" stroke-width="7">
+              <path d="M68 54 H120" stroke="#F4A6B8"/><path d="M80 70 H160" stroke="#E8B04B"/>
+              <path d="M80 86 H140" stroke="#FFF4E6"/><path d="M68 102 H110" stroke="#F4A6B8"/>
+            </g>
+          </svg>
+          <svg class="toon toon--star-a" viewBox="-1.2 -1.2 2.4 2.4"><polygon points="0,-1 .2645,-.364 .951,-.309 .428,.139 .588,.809 0,.45 -.588,.809 -.428,.139 -.951,-.309 -.2645,-.364" fill="#E8B04B" stroke="#1A0A0E" stroke-width=".12" stroke-linejoin="round"/><polygon points="0,-1 .2645,-.364 .951,-.309 .428,.139 .588,.809 0,.45" fill="#1A0A0E" opacity=".22"/></svg>
+          <svg class="toon toon--star-b" viewBox="-1.2 -1.2 2.4 2.4"><polygon points="0,-1 .2645,-.364 .951,-.309 .428,.139 .588,.809 0,.45 -.588,.809 -.428,.139 -.951,-.309 -.2645,-.364" fill="#F4A6B8" stroke="#1A0A0E" stroke-width=".12" stroke-linejoin="round"/><polygon points="0,-1 .2645,-.364 .951,-.309 .428,.139 .588,.809 0,.45" fill="#1A0A0E" opacity=".22"/></svg>
+          <svg class="toon toon--star-c" viewBox="-1.2 -1.2 2.4 2.4"><polygon points="0,-1 .2645,-.364 .951,-.309 .428,.139 .588,.809 0,.45 -.588,.809 -.428,.139 -.951,-.309 -.2645,-.364" fill="#FFF4E6" stroke="#1A0A0E" stroke-width=".12" stroke-linejoin="round"/><polygon points="0,-1 .2645,-.364 .951,-.309 .428,.139 .588,.809 0,.45" fill="#1A0A0E" opacity=".18"/></svg>
+          <svg class="toon toon--spark-a" viewBox="-1.1 -1.1 2.2 2.2"><polygon points="0,-1 .18,-.18 1,0 .18,.18 0,1 -.18,.18 -1,0 -.18,-.18" fill="#F4A6B8" stroke="#1A0A0E" stroke-width=".1" stroke-linejoin="round"/></svg>
+          <svg class="toon toon--spark-b" viewBox="-1.1 -1.1 2.2 2.2"><polygon points="0,-1 .18,-.18 1,0 .18,.18 0,1 -.18,.18 -1,0 -.18,-.18" fill="#FFF4E6" stroke="#1A0A0E" stroke-width=".1" stroke-linejoin="round"/></svg>
+          <svg class="toon toon--spark-c" viewBox="-1.1 -1.1 2.2 2.2"><polygon points="0,-1 .18,-.18 1,0 .18,.18 0,1 -.18,.18 -1,0 -.18,-.18" fill="#E8B04B" stroke="#1A0A0E" stroke-width=".1" stroke-linejoin="round"/></svg>
+        </div>
+
+        <canvas class="hero__canvas" id="hero-canvas"></canvas>
+
+        <div class="hero__sparkles">
+          <i style="--x:8%;--y:30%;--d:0s"></i><i style="--x:22%;--y:78%;--d:1.2s"></i>
+          <i style="--x:48%;--y:12%;--d:2.1s"></i><i style="--x:62%;--y:86%;--d:.6s"></i>
+          <i style="--x:78%;--y:24%;--d:1.7s"></i><i style="--x:92%;--y:58%;--d:2.6s"></i>
+          <i style="--x:36%;--y:52%;--d:3.1s"></i><i style="--x:70%;--y:48%;--d:.9s"></i>
+        </div>
+      </div>
+
+      <div class="hero__inner container">
+        <div class="hero__card" data-reveal="pop">
+          <p class="episode-tag"><span>Episode 01:</span> The Developer</p>
+          <h1 class="hero__name">
+            <span class="hero__name-line">Israel Andy</span>
+            <span class="hero__name-line">T. Maliwat</span>
+          </h1>
+          <p class="hero__title">Frontend Developer <span class="hero__sep" aria-hidden="true">|</span> BSIT Student at National Teachers College</p>
+          <div class="hero__actions">
+            <a class="btn3d btn3d--primary" href="#projects">View Projects</a>
+            <a class="btn3d btn3d--light" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <figure class="hero__photo" data-reveal="slide-left">
+          <div class="hero__photo-back" aria-hidden="true"></div>
+          <div class="hero__photo-frame">
+            <div class="cutout-stage cutout-stage--wine">
+              <img class="cutout" src="assets/img/hero-cutout.webp" alt="Israel Andy T. Maliwat in a white shirt and striped tie" width="556" height="1103" fetchpriority="high">
+            </div>
+          </div>
+          <p class="bubble bubble--hero" aria-hidden="true">Hi, I'm Andy!</p>
+        </figure>
+      </div>
+
+      <a class="hero__scroll" href="#about">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--light" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker">Episode 02</p>
+          <h2 class="sfx-title" id="about-title">About Me</h2>
+        </header>
+
+        <div class="about">
+          <figure class="depth-panel about__photo tilt-l" data-depth data-reveal="slide-right">
+            <div class="dp-bg" aria-hidden="true"></div>
+            <div class="dp-frame dp-frame--photo">
+              <div class="cutout-stage">
+                <img class="cutout" src="assets/img/about-cutout.webp" alt="Israel Andy T. Maliwat in a thoughtful pose" width="534" height="1134" loading="lazy">
+              </div>
+            </div>
+          </figure>
+
+          <div class="depth-panel about__panel tilt-r" data-depth data-reveal="pop">
+            <div class="dp-bg dp-bg--rose" aria-hidden="true"></div>
+            <div class="dp-frame">
+              <div class="dp-content">
+                <div class="bubble bubble--about">
+                  <p>My name is <strong>Israel Andy T. Maliwat</strong>, a Bachelor of Science in Information Technology (BSIT) student at National Teachers College (NTC) in the Philippines.</p>
+                  <p>I am an aspiring Frontend Developer with a passion for creating modern, responsive, user-friendly, and visually appealing websites and applications. I have skills in frontend development, particularly in designing website interfaces, developing interactive components, and improving user experiences.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <!-- Stat bar levels (data-level, 0-100) are placeholders: set them to your own comfort level. -->
+    <section class="section section--dark" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker">Episode 03</p>
+          <h2 class="sfx-title" id="skills-title">Skills</h2>
+          <p class="bubble bubble--hint"><span class="hint-hover">Hover</span><span class="hint-touch">Tap</span> a card to flip it!</p>
+        </header>
+
+        <div class="skills-grid">
+          <!-- 1 -->
+          <article class="skill-card" tabindex="0" data-reveal="pop" aria-label="Frontend Development">
+            <div class="skill-card__inner">
+              <div class="skill-face skill-face--front">
+                <span class="skill-face__label">Ability 01</span>
+                <div class="skill-face__icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="10" width="52" height="42" rx="6" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="4"/><path d="M6 21h52" stroke="#1A0A0E" stroke-width="4"/><circle cx="13" cy="15.5" r="2.2" fill="#A4243B"/><circle cx="20" cy="15.5" r="2.2" fill="#E8B04B"/><path d="M25 29l-7 7 7 7M39 29l7 7-7 7M35 27l-6 18" fill="none" stroke="#800020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="skill-face__name">Frontend Development</h3>
+                <span class="skill-face__flip" aria-hidden="true">Flip &#8635;</span>
+              </div>
+              <div class="skill-face skill-face--back">
+                <h3 class="skill-back__title">Frontend Development</h3>
+                <ul class="stat-list">
+                  <li><span>HTML5</span><b class="stat" data-level="90" aria-hidden="true"></b></li>
+                  <li><span>CSS3</span><b class="stat" data-level="85" aria-hidden="true"></b></li>
+                  <li><span>JavaScript (ES6+)</span><b class="stat" data-level="75" aria-hidden="true"></b></li>
+                  <li><span>Vite</span><b class="stat" data-level="70" aria-hidden="true"></b></li>
+                  <li><span>Responsive web design</span><b class="stat" data-level="85" aria-hidden="true"></b></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="skill-card" tabindex="0" data-reveal="pop" aria-label="UI/UX Design">
+            <div class="skill-card__inner">
+              <div class="skill-face skill-face--front">
+                <span class="skill-face__label">Ability 02</span>
+                <div class="skill-face__icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 L48 30 L37 52 H27 L16 30 Z" fill="#F4A6B8" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/><path d="M32 7v21" stroke="#1A0A0E" stroke-width="3"/><circle cx="32" cy="32" r="4.5" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="3"/><rect x="25" y="52" width="14" height="7" rx="1.5" fill="#800020" stroke="#1A0A0E" stroke-width="3"/><path d="M4 50c8-10 12 4 18-6" fill="none" stroke="#E8B04B" stroke-width="3.5" stroke-linecap="round"/><path d="M42 12c6-6 12 0 18-4" fill="none" stroke="#E8B04B" stroke-width="3.5" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="skill-face__name">UI/UX Design</h3>
+                <span class="skill-face__flip" aria-hidden="true">Flip &#8635;</span>
+              </div>
+              <div class="skill-face skill-face--back">
+                <h3 class="skill-back__title">UI/UX Design</h3>
+                <ul class="stat-list">
+                  <li><span>Figma</span><b class="stat" data-level="85" aria-hidden="true"></b>
+                    <small>Wireframes, prototypes, user flows, color palettes, typography</small></li>
+                  <li><span>Canva</span><b class="stat" data-level="80" aria-hidden="true"></b></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="skill-card" tabindex="0" data-reveal="pop" aria-label="Web and Cloud">
+            <div class="skill-card__inner">
+              <div class="skill-face skill-face--front">
+                <span class="skill-face__label">Ability 03</span>
+                <div class="skill-face__icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 48a10 10 0 0 1 2-19.8 14 14 0 0 1 27-3 11 11 0 0 1 3 22.8z" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/><path d="M32 43V31M26 36.5l6-6 6 6" fill="none" stroke="#800020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 56h44" stroke="#E8B04B" stroke-width="4" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="skill-face__name">Web &amp; Cloud</h3>
+                <span class="skill-face__flip" aria-hidden="true">Flip &#8635;</span>
+              </div>
+              <div class="skill-face skill-face--back">
+                <h3 class="skill-back__title">Web &amp; Cloud</h3>
+                <ul class="stat-list">
+                  <li><span>Firebase Hosting</span><b class="stat" data-level="75" aria-hidden="true"></b></li>
+                  <li><span>Firebase Authentication</span><b class="stat" data-level="70" aria-hidden="true"></b></li>
+                  <li><span>Firestore</span><b class="stat" data-level="70" aria-hidden="true"></b></li>
+                  <li><span>Firebase Storage</span><b class="stat" data-level="65" aria-hidden="true"></b></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="skill-card" tabindex="0" data-reveal="pop" aria-label="Interactive and Emerging Tech">
+            <div class="skill-card__inner">
+              <div class="skill-face skill-face--front">
+                <span class="skill-face__label">Ability 04</span>
+                <div class="skill-face__icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 15V5h10M49 5h10v10M59 49v10H49M15 59H5V49" fill="none" stroke="#E8B04B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 12 50 22v20L32 52 14 42V22z" fill="#F4A6B8" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/><path d="M32 32 50 22v20L32 52z" fill="#A4243B" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/><path d="M14 22l18 10v20" fill="none" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="skill-face__name">Interactive &amp; Emerging Tech</h3>
+                <span class="skill-face__flip" aria-hidden="true">Flip &#8635;</span>
+              </div>
+              <div class="skill-face skill-face--back">
+                <h3 class="skill-back__title">Interactive &amp; Emerging Tech</h3>
+                <ul class="stat-list">
+                  <li><span>Three.js</span><b class="stat" data-level="65" aria-hidden="true"></b></li>
+                  <li><span>WebXR (web-based AR)</span><b class="stat" data-level="60" aria-hidden="true"></b></li>
+                  <li><span>Chart.js</span><b class="stat" data-level="70" aria-hidden="true"></b></li>
+                  <li><span>Google Gemini API integration</span><b class="stat" data-level="65" aria-hidden="true"></b></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="skill-card" tabindex="0" data-reveal="pop" aria-label="Media Production">
+            <div class="skill-card__inner">
+              <div class="skill-face skill-face--front">
+                <span class="skill-face__label">Ability 05</span>
+                <div class="skill-face__icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="17" cy="14" r="7" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="4"/><circle cx="33" cy="14" r="7" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="4"/><rect x="5" y="22" width="38" height="27" rx="5" fill="#800020" stroke="#1A0A0E" stroke-width="4"/><path d="M43 30l15-8v28l-15-8z" fill="#F4A6B8" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/><circle cx="14" cy="31" r="3.5" fill="#E8B04B"/><path d="M14 58h20M24 49v9" stroke="#1A0A0E" stroke-width="4" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="skill-face__name">Media Production</h3>
+                <span class="skill-face__flip" aria-hidden="true">Flip &#8635;</span>
+              </div>
+              <div class="skill-face skill-face--back">
+                <h3 class="skill-back__title">Media Production</h3>
+                <ul class="stat-list">
+                  <li><span>Live broadcast graphics (GFX)</span><b class="stat" data-level="85" aria-hidden="true"></b></li>
+                  <li><span>Instant replay &amp; slow-motion operation</span><b class="stat" data-level="80" aria-hidden="true"></b></li>
+                  <li><span>Floor directing</span><b class="stat" data-level="80" aria-hidden="true"></b></li>
+                  <li><span>Team directing</span><b class="stat" data-level="75" aria-hidden="true"></b></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="skill-card" tabindex="0" data-reveal="pop" aria-label="Soft Skills">
+            <div class="skill-card__inner">
+              <div class="skill-face skill-face--front">
+                <span class="skill-face__label">Ability 06</span>
+                <div class="skill-face__icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 9h35v23H20l-8 8v-8H5z" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/><path d="M24 29h35v21h-6v8l-8-8H24z" fill="#F4A6B8" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/><path d="M13 20h19M32 40h19" stroke="#800020" stroke-width="4" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="skill-face__name">Soft Skills</h3>
+                <span class="skill-face__flip" aria-hidden="true">Flip &#8635;</span>
+              </div>
+              <div class="skill-face skill-face--back">
+                <h3 class="skill-back__title">Soft Skills</h3>
+                <ul class="stat-list">
+                  <li><span>Teamwork</span><b class="stat" data-level="90" aria-hidden="true"></b></li>
+                  <li><span>Leadership</span><b class="stat" data-level="80" aria-hidden="true"></b></li>
+                  <li><span>Communication</span><b class="stat" data-level="85" aria-hidden="true"></b></li>
+                  <li><span>Problem solving</span><b class="stat" data-level="80" aria-hidden="true"></b></li>
+                  <li><span>Working under pressure</span><b class="stat" data-level="90" aria-hidden="true"></b></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & ACHIEVEMENTS ============ -->
+    <section class="section section--light" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker">Episode 04 &middot; Story Arc</p>
+          <h2 class="sfx-title" id="education-title">Education &amp; Achievements</h2>
+        </header>
+
+        <div class="arc">
+          <figure class="depth-panel arc__art tilt-l" data-depth data-reveal="slide-right">
+            <div class="dp-bg" aria-hidden="true"></div>
+            <div class="dp-frame dp-frame--photo">
+              <div class="cutout-stage cutout-stage--rose">
+                <img class="cutout" src="assets/img/education-cutout.webp" alt="Israel Andy T. Maliwat holding sunflowers over one shoulder" width="572" height="1079" loading="lazy">
+              </div>
+            </div>
+          </figure>
+
+          <ol class="arc__list">
+            <li class="ep-card" data-reveal="depth">
+              <span class="ep-card__node" aria-hidden="true"></span>
+              <div class="ep-card__body">
+                <p class="ep-card__meta"><span class="ep-card__num">EP. 01</span><span class="ep-card__years">2020–2021</span></p>
+                <h3 class="ep-card__title">Junior High School</h3>
+                <p class="ep-card__org">Manuel A. Roxas High School</p>
+                <p class="honor"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>With Honors</p>
+              </div>
+            </li>
+            <li class="ep-card" data-reveal="depth">
+              <span class="ep-card__node" aria-hidden="true"></span>
+              <div class="ep-card__body">
+                <p class="ep-card__meta"><span class="ep-card__num">EP. 02</span><span class="ep-card__years">2022–2023</span></p>
+                <h3 class="ep-card__title">Senior High School</h3>
+                <p class="ep-card__org">Manuel A. Roxas High School</p>
+                <p class="ep-card__detail">TVL – ICT Strand</p>
+                <p class="honor"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>With High Honors</p>
+              </div>
+            </li>
+            <li class="ep-card" data-reveal="depth">
+              <span class="ep-card__node" aria-hidden="true"></span>
+              <div class="ep-card__body">
+                <p class="ep-card__meta"><span class="ep-card__num">EP. 03</span><span class="ep-card__years">2026–2027</span></p>
+                <h3 class="ep-card__title">College</h3>
+                <p class="ep-card__org">National Teachers College</p>
+                <p class="ep-card__detail">Bachelor of Science in Information Technology (BSIT)</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--dark" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker">Episode 05 &middot; Story Arc</p>
+          <h2 class="sfx-title" id="experience-title">Experience</h2>
+        </header>
+
+        <div class="arc arc--flip">
+          <figure class="depth-panel arc__art tilt-r" data-depth data-reveal="slide-left">
+            <div class="dp-bg dp-bg--rose" aria-hidden="true"></div>
+            <div class="dp-frame dp-frame--photo">
+              <div class="cutout-stage cutout-stage--wine cutout-stage--square">
+                <img class="cutout" src="assets/img/experience-cutout.webp" alt="Israel Andy T. Maliwat seated in a white shirt and tie" width="842" height="961" loading="lazy">
+              </div>
+            </div>
+          </figure>
+
+          <div class="arc__col">
+            <div class="company" data-reveal="pop">
+              <p class="company__label">Work Experience</p>
+              <h3 class="company__name">D&amp;D Media</h3>
+              <p class="company__desc">Live media production</p>
+            </div>
+
+            <ol class="arc__list">
+              <li class="ep-card" data-reveal="depth">
+                <span class="ep-card__node" aria-hidden="true"></span>
+                <div class="ep-card__body">
+                  <p class="ep-card__meta"><span class="ep-card__num">Role 01</span></p>
+                  <h3 class="ep-card__title">Team Director</h3>
+                  <p class="ep-card__text">Led the production team and directed the overall coverage of live events.</p>
+                </div>
+              </li>
+              <li class="ep-card" data-reveal="depth">
+                <span class="ep-card__node" aria-hidden="true"></span>
+                <div class="ep-card__body">
+                  <p class="ep-card__meta"><span class="ep-card__num">Role 02</span></p>
+                  <h3 class="ep-card__title">Floor Director</h3>
+                  <p class="ep-card__text">Coordinated talent and crew on the floor and relayed cues from the control room.</p>
+                </div>
+              </li>
+              <li class="ep-card" data-reveal="depth">
+                <span class="ep-card__node" aria-hidden="true"></span>
+                <div class="ep-card__body">
+                  <p class="ep-card__meta"><span class="ep-card__num">Role 03</span></p>
+                  <h3 class="ep-card__title">Instant Replay / Slow-Mo Operator</h3>
+                  <p class="ep-card__text">Captured and played back key moments in instant replay and slow motion during live productions.</p>
+                </div>
+              </li>
+              <li class="ep-card" data-reveal="depth">
+                <span class="ep-card__node" aria-hidden="true"></span>
+                <div class="ep-card__body">
+                  <p class="ep-card__meta"><span class="ep-card__num">Role 04</span></p>
+                  <h3 class="ep-card__title">GFX Operator</h3>
+                  <p class="ep-card__text">Operated live on-screen graphics such as titles, lower thirds, and overlays during broadcasts.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--light" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker">Episode 06</p>
+          <h2 class="sfx-title" id="projects-title">Projects</h2>
+        </header>
+
+        <div class="projects-grid">
+          <!-- SmartHub -->
+          <article class="tcard" data-tilt data-reveal="pop">
+            <div class="tcard__inner">
+              <span class="tcard__shine" aria-hidden="true"></span>
+              <header class="tcard__top">
+                <span class="tcard__type">Capstone Project</span>
+                <span class="tcard__team">Team of 4</span>
+              </header>
+              <div class="tcard__art">
+                <svg viewBox="0 0 320 180" role="img" aria-label="Illustration of a tile kiosk next to an AR floor preview">
+                  <defs><pattern id="art-dots-a" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.7" fill="#A4243B"/></pattern></defs>
+                  <rect width="320" height="180" fill="#5C0A1A"/><rect width="320" height="180" fill="url(#art-dots-a)"/>
+                  <g stroke="#1A0A0E" stroke-width="3" stroke-linejoin="round">
+                    <polygon points="150,112 187.5,112 181.2,130 138.8,130" fill="#F4A6B8"/>
+                    <polygon points="187.5,112 225,112 223.6,130 181.2,130" fill="#FFF4E6"/>
+                    <polygon points="225,112 262.5,112 266,130 223.6,130" fill="#F4A6B8"/>
+                    <polygon points="262.5,112 300,112 308.4,130 266,130" fill="#FFF4E6"/>
+                    <polygon points="138.8,130 181.2,130 174.2,150 126.4,150" fill="#FFF4E6"/>
+                    <polygon points="181.2,130 223.6,130 222.1,150 174.2,150" fill="#F4A6B8"/>
+                    <polygon points="223.6,130 266,130 269.9,150 222.1,150" fill="#FFF4E6"/>
+                    <polygon points="266,130 308.4,130 317.7,150 269.9,150" fill="#F4A6B8"/>
+                    <polygon points="126.4,150 174.2,150 165,176 110,176" fill="#F4A6B8"/>
+                    <polygon points="174.2,150 222.1,150 220,176 165,176" fill="#FFF4E6"/>
+                    <polygon points="222.1,150 269.9,150 275,176 220,176" fill="#F4A6B8"/>
+                    <polygon points="269.9,150 317.7,150 330,176 275,176" fill="#FFF4E6"/>
+                  </g>
+                  <path d="M146 92v-12h14M294 80h14v12M308 160v12h-14M146 172v-12" fill="none" stroke="#E8B04B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(-6 -2)"/>
+                  <g stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round">
+                    <rect x="22" y="22" width="100" height="120" rx="8" fill="#800020"/>
+                    <rect x="32" y="32" width="80" height="66" rx="3" fill="#FFF4E6"/>
+                    <rect x="62" y="142" width="20" height="22" fill="#A4243B"/>
+                    <rect x="44" y="162" width="56" height="10" rx="3" fill="#1A0A0E"/>
+                  </g>
+                  <g stroke="#1A0A0E" stroke-width="2.5">
+                    <rect x="40" y="40" width="18" height="18" fill="#F4A6B8"/><rect x="63" y="40" width="18" height="18" fill="#A4243B"/><rect x="86" y="40" width="18" height="18" fill="#E8B04B"/>
+                    <rect x="40" y="64" width="18" height="18" fill="#5C0A1A"/><rect x="63" y="64" width="18" height="18" fill="#FFF4E6"/><rect x="86" y="64" width="18" height="18" fill="#F4A6B8"/>
+                  </g>
+                  <rect x="40" y="106" width="64" height="12" rx="6" fill="#E8B04B" stroke="#1A0A0E" stroke-width="3"/>
+                  <g transform="translate(232 44)">
+                    <path d="M-34 -18h68a8 8 0 0 1 8 8v20a8 8 0 0 1-8 8h-40l-12 12v-12h-16a8 8 0 0 1-8-8v-20a8 8 0 0 1 8-8z" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="3.5" stroke-linejoin="round"/>
+                    <text x="0" y="8" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="22" letter-spacing="1" fill="#800020">AI + AR</text>
+                  </g>
+                  <polygon points="290,18 294,30 306,34 294,38 290,50 286,38 274,34 286,30" fill="#E8B04B" stroke="#1A0A0E" stroke-width="2.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="tcard__body">
+                <h3 class="tcard__title">SmartHub</h3>
+                <p class="tcard__subtitle">Generative AI and AR Tile Visualization Virtual Kiosk with Inventory Management System</p>
+                <p class="tcard__meta"><strong>Client:</strong> Tile Depot Discount Center, Paco, Manila</p>
+                <p class="tcard__desc">A web system that replaces the store's manual Excel inventory and helps customers picture tiles in their own space, with an Admin Portal, a Virtual Kiosk, and a public catalog sharing one Firebase backend.</p>
+                <ul class="tags" aria-label="Tech stack">
+                  <li>Vite</li><li>JavaScript</li><li>Firebase</li><li>Google Gemini API</li><li>Three.js</li><li>WebXR</li><li>8th Wall</li><li>Chart.js</li>
+                </ul>
+                <div class="tcard__actions">
+                  <button class="btn3d btn3d--primary btn3d--sm" type="button" data-open="dlg-smarthub">View Details</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Buwisely -->
+          <article class="tcard" data-tilt data-reveal="pop">
+            <div class="tcard__inner">
+              <span class="tcard__shine" aria-hidden="true"></span>
+              <header class="tcard__top">
+                <span class="tcard__type">Academic Project</span>
+                <span class="tcard__team">Team of 3 &middot; Dec 2025</span>
+              </header>
+              <div class="tcard__art">
+                <svg viewBox="0 0 320 180" role="img" aria-label="Illustration of a mobile app showing spending charts, a wallet, and a verified shield">
+                  <defs><pattern id="art-dots-b" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.7" fill="#FFF4E6" opacity=".55"/></pattern></defs>
+                  <rect width="320" height="180" fill="#F4A6B8"/><rect width="320" height="180" fill="url(#art-dots-b)"/>
+                  <g stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round">
+                    <rect x="112" y="12" width="96" height="160" rx="16" fill="#1A0A0E"/>
+                    <rect x="120" y="24" width="80" height="136" rx="7" fill="#FFF4E6" stroke-width="0"/>
+                  </g>
+                  <rect x="120" y="24" width="80" height="20" rx="7" fill="#800020"/>
+                  <rect x="128" y="31" width="34" height="6" rx="3" fill="#FFF4E6"/>
+                  <g stroke="#1A0A0E" stroke-width="2.5">
+                    <rect x="130" y="90" width="11" height="28" fill="#A4243B"/>
+                    <rect x="146" y="72" width="11" height="46" fill="#800020"/>
+                    <rect x="162" y="82" width="11" height="36" fill="#A4243B"/>
+                    <rect x="178" y="58" width="11" height="60" fill="#800020"/>
+                  </g>
+                  <path d="M126 118h68" stroke="#1A0A0E" stroke-width="3"/>
+                  <rect x="128" y="128" width="64" height="22" rx="5" fill="#E8B04B" stroke="#1A0A0E" stroke-width="3"/>
+                  <circle cx="141" cy="139" r="5" fill="#FFF4E6" stroke="#1A0A0E" stroke-width="2.5"/>
+                  <rect x="152" y="136" width="30" height="6" rx="3" fill="#1A0A0E"/>
+                  <g transform="translate(262 58)">
+                    <path d="M0 -36l28 10v22c0 22-13 35-28 44C-15 31-28 18-28-4v-22z" fill="#800020" stroke="#1A0A0E" stroke-width="4" stroke-linejoin="round"/>
+                    <path d="M-12 0l8 9 16-18" fill="none" stroke="#FFF4E6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <g fill="none" stroke="#1A0A0E" stroke-width="4">
+                    <rect x="236" y="118" width="30" height="16" rx="8" fill="#FFF4E6"/>
+                    <rect x="256" y="134" width="30" height="16" rx="8" fill="#E8B04B"/>
+                  </g>
+                  <g stroke="#1A0A0E" stroke-width="3.5">
+                    <circle cx="54" cy="56" r="20" fill="#E8B04B"/><circle cx="76" cy="96" r="16" fill="#E8B04B"/><circle cx="44" cy="132" r="13" fill="#FFF4E6"/>
+                  </g>
+                  <text x="54" y="64" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="22" fill="#1A0A0E">₱</text>
+                  <text x="76" y="103" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="17" fill="#1A0A0E">₱</text>
+                </svg>
+              </div>
+              <div class="tcard__body">
+                <h3 class="tcard__title">Buwisely</h3>
+                <p class="tcard__subtitle">Track, Manage, and Understand Your Taxes</p>
+                <p class="tcard__meta"><strong>Mobile Development Final Project</strong></p>
+                <p class="tcard__desc">A mobile app UI/UX design that lets Filipino citizens see where their taxes go, using a blockchain-based verification concept to make government spending records transparent and tamper-proof.</p>
+                <ul class="tags" aria-label="Tools">
+                  <li>Figma (UI/UX)</li><li>Canva (logo)</li><li>20+ screens</li><li>Complete user flow</li>
+                </ul>
+                <div class="tcard__actions">
+                  <a class="btn3d btn3d--primary btn3d--sm" href="https://www.figma.com/design/Ayr38d0654wHTHRxWpxP4I/Buwisely?node-id=0-1&amp;t=54xzt3qM6JWzuI6V-1" target="_blank" rel="noopener noreferrer">Figma Design</a>
+                  <a class="btn3d btn3d--light btn3d--sm" href="https://docs.google.com/document/d/1I7Fw5CDHB-nX7WK3mPDymwWHD_RHlFF_n_ud5vyz8Hs/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Documentation</a>
+                  <button class="btn3d btn3d--light btn3d--sm" type="button" data-open="dlg-buwisely">View Details</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--dark section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker">Episode 07</p>
+          <h2 class="sfx-title" id="contact-title">Contact</h2>
+        </header>
+
+        <div class="contact">
+          <div class="contact__left">
+            <div class="mega-bubble" data-reveal="pop">
+              <p class="mega-bubble__text">Let's work together!</p>
+            </div>
+
+            <div class="contact__row">
+              <figure class="depth-panel contact__photo tilt-l" data-depth data-reveal="slide-right">
+                <div class="dp-bg dp-bg--rose" aria-hidden="true"></div>
+                <div class="dp-frame dp-frame--photo">
+                  <div class="cutout-stage">
+                    <img class="cutout" src="assets/img/contact-cutout.webp" alt="Israel Andy T. Maliwat holding a bouquet of sunflowers" width="588" height="1133" loading="lazy">
+                  </div>
+                </div>
+              </figure>
+
+              <ul class="contact__list" data-reveal="slide-left">
+                <li>
+                  <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+                  <span><small>Phone</small><a href="tel:+639920511371">+63 992 051 1371</a></span>
+                </li>
+                <li>
+                  <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7.3V17h16V7.3z"/></svg></span>
+                  <span><small>Email</small><a href="mailto:israelmaliwat45@gmail.com">israelmaliwat45@gmail.com</a></span>
+                </li>
+                <li>
+                  <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7zm0 4.5A2.5 2.5 0 1 0 12 11.5 2.5 2.5 0 0 0 12 6.5z"/></svg></span>
+                  <span><small>Address</small>1433 Gomez, Paco, Manila</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="socials" data-reveal="pop">
+              <p class="socials__label">Find me online</p>
+              <ul class="socials__list">
+                <li><a class="btn3d btn3d--light btn3d--sm" href="https://www.linkedin.com/in/ntc-s-israel-andy-maliwat-185393310/" target="_blank" rel="me noopener noreferrer">LinkedIn<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                <li><a class="btn3d btn3d--light btn3d--sm" href="https://www.instagram.com/iandy.m/" target="_blank" rel="me noopener noreferrer">Instagram<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                <li><a class="btn3d btn3d--light btn3d--sm" href="https://www.facebook.com/israeltmaliwat/" target="_blank" rel="me noopener noreferrer">Facebook<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="contact__form panel" id="contact-form" data-reveal="pop" novalidate>
+            <h3 class="contact__form-title">Send a message</h3>
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__error" id="cf-name-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+              <p class="field__error" id="cf-email-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+              <p class="field__error" id="cf-message-err" aria-live="polite"></p>
+            </div>
+            <button class="btn3d btn3d--primary btn3d--block" type="submit">Send Message</button>
+            <p class="contact__form-note">This opens your email app with your message ready to send.</p>
+            <p class="contact__status" id="cf-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year">2026</span> Israel Andy T. Maliwat</p>
+      <ul class="footer__social" aria-label="Social profiles">
+        <li><a href="https://www.linkedin.com/in/ntc-s-israel-andy-maliwat-185393310/" target="_blank" rel="me noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/iandy.m/" target="_blank" rel="me noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/israeltmaliwat/" target="_blank" rel="me noopener noreferrer">Facebook</a></li>
+      </ul>
+      <a class="footer__top" href="#hero">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- ============ PROJECT DETAIL DIALOGS ============ -->
+  <dialog class="dlg" id="dlg-smarthub" aria-labelledby="dlg-smarthub-title">
+    <div class="dlg__panel">
+      <button class="dlg__close" type="button" data-close aria-label="Close details">&times;</button>
+      <p class="dlg__kicker">Capstone Project &middot; Team of 4</p>
+      <h3 class="dlg__title" id="dlg-smarthub-title">SmartHub</h3>
+      <p class="dlg__subtitle">Generative AI and AR Tile Visualization Virtual Kiosk with Inventory Management System</p>
+      <p><strong>Client:</strong> Tile Depot Discount Center, Paco, Manila</p>
+      <p>A web system that replaces the store's manual Excel inventory and helps customers picture tiles in their own space. It has three parts that share one Firebase backend with near real-time updates:</p>
+      <ul class="dlg__list">
+        <li><strong>Admin Portal (owner):</strong> stock levels, sales, deliveries, event logs, low-stock alerts, and sales-forecast suggestions for restocking and promos. Secured with email, password, and a one-time code from Google Authenticator (TOTP).</li>
+        <li><strong>Virtual Kiosk (staff and walk-in customers):</strong> browse the tile catalog, add to cart, check out, staff confirms payment, stock is deducted automatically, and an order summary is emailed to the customer.</li>
+        <li><strong>Public link:</strong> a limited online catalog with the same visualization tools.</li>
+      </ul>
+      <h4 class="dlg__h">Tile preview modes</h4>
+      <ul class="dlg__list">
+        <li><strong>Generative AI mode:</strong> uses the Google Gemini API to replace the floor or wall in a photo of the customer's room with the selected tile.</li>
+        <li><strong>Live AR mode:</strong> shows the tile on a real floor or wall through the device camera (WebXR + Three.js on Android, 8th Wall on iOS).</li>
+      </ul>
+      <h4 class="dlg__h">Tech</h4>
+      <ul class="tags">
+        <li>Vite</li><li>JavaScript</li><li>Firebase Hosting</li><li>Firebase Authentication</li><li>Cloud Firestore</li><li>Realtime Database</li><li>Firebase Storage</li><li>Cloud Functions</li><li>Google Gemini API</li><li>Three.js</li><li>WebXR</li><li>8th Wall</li><li>Chart.js</li>
+      </ul>
+      <h4 class="dlg__h">Method</h4>
+      <p>Incremental Iterative Model, evaluated using the ISO/IEC 25010 software quality standard.</p>
+    </div>
+  </dialog>
+
+  <dialog class="dlg" id="dlg-buwisely" aria-labelledby="dlg-buwisely-title">
+    <div class="dlg__panel">
+      <button class="dlg__close" type="button" data-close aria-label="Close details">&times;</button>
+      <p class="dlg__kicker">Academic Project &middot; Mobile Development Final Project &middot; Team of 3, December 2025</p>
+      <h3 class="dlg__title" id="dlg-buwisely-title">Buwisely</h3>
+      <p class="dlg__subtitle">Track, Manage, and Understand Your Taxes</p>
+      <p>A mobile app UI/UX design that lets Filipino citizens see where their taxes go, using a blockchain-based verification concept to make government spending records transparent and tamper-proof.</p>
+      <h4 class="dlg__h">Key features</h4>
+      <ul class="dlg__list">
+        <li><strong>Taxtivity:</strong> report local issues, student services (scholarships, enrollment), business services, digital government IDs, and emergency hotlines.</li>
+        <li><strong>Transparency &amp; Good Governance:</strong> programs and projects, bids and contractors, financial reports, annual budget, legislative ordinances, and executive orders.</li>
+        <li><strong>Buwis Wallet:</strong> e-wallet for paying taxes and document fees.</li>
+        <li><strong>Profile and settings.</strong></li>
+      </ul>
+      <h4 class="dlg__h">Design</h4>
+      <p>Poppins typography, blue-based color palette, 20+ screens with a complete user flow.</p>
+      <h4 class="dlg__h">Tools</h4>
+      <ul class="tags"><li>Figma (UI/UX)</li><li>Canva (logo)</li></ul>
+      <div class="dlg__actions">
+        <a class="btn3d btn3d--primary btn3d--sm" href="https://www.figma.com/design/Ayr38d0654wHTHRxWpxP4I/Buwisely?node-id=0-1&amp;t=54xzt3qM6JWzuI6V-1" target="_blank" rel="noopener noreferrer">Figma Design</a>
+        <a class="btn3d btn3d--light btn3d--sm" href="https://docs.google.com/document/d/1I7Fw5CDHB-nX7WK3mPDymwWHD_RHlFF_n_ud5vyz8Hs/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Documentation</a>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
